@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.Header{
+    color: white;
+    text-shadow: 5px 5px 50px whitesmoke;
+    font-size: 60px;
+    padding: 40px 40px;
+}
+.formbox{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    width: 100%;
+    max-width: 800px;
+    padding-top: 1px;
+    padding-bottom: 1.5rem;
+    background-color: #FDDA16;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 5px 50px #FDDA16;
+    transition: 1s;
+}
+.formbox .item-box{
+    position: relative;
+    margin-top: 5rem;
+    width: 100%;
+    max-width: 800px;
+}
+.formbox .textlabel{
+    color: white;
+    text-shadow: 5px 5px 50px purple;
+    font-size: 50px;
+}
+.formbox .inputbox{
+    border-color: #BA86EB;
+    box-shadow: 5px 5px 50px whitesmoke;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    background-color: transparent;
+    transition: .75s;
+}
+.formbox .inputbox:focus{
+    background-color: white;
+}
+.formbox .item-btn{
+    margin-top: 5rem;
+    font-size: 28px;
+    padding: 20px 40px;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: .75s;
+}
+.formbox .item-btn:hover{
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 50px whitesmoke;
+    background-color: tomato;
+    box-shadow: 5px 5px 50px tomato;
+}
+.resultbox{
+    display: none;
+    color: black;
+    text-shadow: 5px 5px 50px black;
+    margin-top: 5rem;
+}
+.resultbox p{
+    font-size: 70px;
+}
+.bmiImage{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.fullformClass{
+    animation: fullform forwards 1s;
+}
+@keyframes fullform{
+    from{
+        height: 500px;
+    }
+    to{
+        height: 1300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Header{
+        color: white;
+        text-shadow: 5px 5px 50px whitesmoke;
+        font-size: 60px;
+        padding: 40px 40px;
+    }
+    .formbox{
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+        width: 100%;
+        max-width: 500px;
+        padding-top: 1px;
+        padding-bottom: 1.5rem;
+        background-color: #FDDA16;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: 5px 5px 50px #FDDA16;
+        transition: 1s;
+    }
+    .formbox .item-box{
+        position: relative;
+        margin-top: 5rem;
+        width: 100%;
+        max-width: 800px;
+    }
+    .formbox .textlabel{
+        color: white;
+        text-shadow: 5px 5px 50px purple;
+        font-size: 50px;
+    }
+    .formbox .inputbox{
+        border-color: #BA86EB;
+        box-shadow: 5px 5px 50px whitesmoke;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 400px;
+        height: 50px;
+        text-align: center;
+        font-size: 35px;
+        background-color: transparent;
+        transition: .75s;
+    }
+    .formbox .inputbox:focus{
+        background-color: white;
+    }
+    .formbox .item-btn{
+        margin-top: 5rem;
+        font-size: 28px;
+        padding: 20px 40px;
+        border-radius: 25px;
+        background-color: transparent;
+        transition: .75s;
+    }
+    .formbox .item-btn:hover{
+        cursor: pointer;
+        color: white;
+        text-shadow: 1px 1px 50px whitesmoke;
+        background-color: tomato;
+        box-shadow: 5px 5px 50px tomato;
+    }
+    .resultbox{
+        display: none;
+        color: black;
+        text-shadow: 5px 5px 50px black;
+        margin-top: 5rem;
+    }
+    .resultbox p{
+        font-size: 50px;
+    }
+    .bmiImage{
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin-top: 2rem;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+    .fullformClass{
+        animation: fullform forwards 1s;
+    }
+    @keyframes fullform{
+        from{
+            height: 500px;
+        }
+        to{
+            height: 1125px;
+        }
+    }
+}
