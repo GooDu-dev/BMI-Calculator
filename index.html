@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1 class="Header" >BMI <br> Calculator</h1>
+    <form id="Form" class="formbox" action="">
+        <div class="item-box">
+            <label class="textlabel" for="">Height : </label>
+            <input id="height" class="inputbox" placeholder="Height(Cm)" type="number">
+        </div>
+        <div class="item-box">
+            <label class="textlabel" for="">Weight : </label>
+            <input id="weight" class="inputbox" placeholder="Weight(Kg)" type="number">
+        </div>
+        <button type="button" onclick="BMIcalculator()" class="item-btn">Summit</button>
+        <div id="resultbox" class="resultbox">
+            <h1 id="result">Your BMI is :</h1>
+            <p id="desciption"></p>
+        </div>
+        <img class="bmiImage" id="bmiImage" src="https://images.everydayhealth.com/images/heart-health/heart-failure/bad-news-if-your-bmi-is-high-fat-causes-heart-failure-1440x810.jpg?sfvrsn=1419f6bb_0" alt="">
+    </form>
+    <script src="script.js"></script>
+</html>
